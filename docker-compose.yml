@@ -1,0 +1,40 @@
+frontweb:
+  build: "./front/"
+  working_dir: /code
+  ports:
+   - "8888:8888"
+  volumes:
+   - ./front:/code
+  command: python web.py
+  links:
+    - rabbit
+    - backweb
+
+backweb:
+  build: "./back/"
+  working_dir: /code
+  volumes:
+   - ./back:/code
+  command: python web.py
+  links:
+    - redis
+  environment:
+    APP_CONFIG: appconfig_develop.py
+
+backworker:
+  build: "./back/"
+  working_dir: /code
+  command: celery -A worker.celery worker --config celeryconfig -C
+  volumes:
+   - ./back:/code
+  links:
+    - rabbit
+    - redis
+  environment:
+    APP_CONFIG: appconfig_develop.py
+
+rabbit:
+  image: rabbitmq
+
+redis:
+  image: redis
