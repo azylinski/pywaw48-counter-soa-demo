@@ -26,5 +26,5 @@ There are 3 routes prepared on ```front``` service:
 
 The first one will get current counter value. The other two, will increase redis key.
 
-[demo img]
+![demo-schema](https://cloud.githubusercontent.com/assets/493243/8180693/0cabfad2-1420-11e5-96eb-afab21f10ec0.png)
 
