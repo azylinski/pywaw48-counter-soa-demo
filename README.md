@@ -30,8 +30,6 @@ The first one will get current counter value. The other two, will increase redis
 
 ### Contact details
 
-@ArturZylinski
-
-artur@growbots.com
-
-www.growbots.com
+- [@ArturZylinski](http://twitter.com/ArturZylinski)
+- artur@growbots.com
+- www.growbots.com
