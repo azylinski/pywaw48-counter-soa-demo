@@ -13,7 +13,7 @@ Demo requires the following dependencies:
 
 - checkout repo: ```git clone https://github.com/azylinski/pywaw48-counter-soa-demo.git pywaw-48```
 - enter folder: ```cd pywaw-48```
-- [start docker daemon](https://docs.docker.com/reference/commandline/cli/#daemon) - ```docker -d```
+- [start docker daemon](https://docs.docker.com/reference/commandline/cli/#daemon) - ```sudo docker -d```
 - build & run an app: ```docker-compose up```
 - view: http://127.0.0.1:8888/
 
