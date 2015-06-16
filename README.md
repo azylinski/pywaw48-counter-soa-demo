@@ -1,5 +1,4 @@
-# PyWaw#48 - Counter demo (SOA)
-### http://pywaw.org/48/
+# [PyWaw#48](http://pywaw.org/48/) - Counter demo (SOA)
 
 Simple redis counter to demonstrate docker containers composition #SOA
 
